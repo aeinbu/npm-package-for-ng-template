@@ -1,0 +1,18 @@
+{
+  "name": "test-ng-webpack",
+  "version": "1.0.0",
+  "description": "A test of using angular and es6 with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjan Einbu",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "angular": "^1.6.0"
+  }
+}
