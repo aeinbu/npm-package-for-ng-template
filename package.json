@@ -9,6 +9,11 @@
   "author": "Arjan Einbu",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-latest": "^6.16.0",
+    "html-loader": "^0.4.4",
+    "ng-annotate-loader": "^0.2.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   },
