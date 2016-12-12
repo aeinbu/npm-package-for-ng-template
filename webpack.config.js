@@ -11,8 +11,8 @@ module.exports = {
 		publicPath: "/dist",
 		filename: "index.js"
 	},
-	devserver: {
-		inline: true
+	externals: {
+		"angular": "angular"
 	},
 	module: {
 		loaders: [{
@@ -23,5 +23,8 @@ module.exports = {
 			test: /\.html$/,
 			loader: "html"
 		}]
-	}
+	},
+	devserver: {
+		inline: true
+	},
 }

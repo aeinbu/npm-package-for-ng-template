@@ -10,6 +10,7 @@ module.config(function () {
 module.run(function ($templateCache) {
 	$templateCache.put("logoheader.html", require("./logoheader.html"));
 
+	// just some ES6 code to see that Babel does its job...
 	const fn = (...num) => {
 		for (let val of num) {
 			console.log(val);
