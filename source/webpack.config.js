@@ -1,14 +1,9 @@
 var path = require("path");
-// require("ngtemplate-loader")
-// require("ng-cache-loader");
-// require("html-loader");
-// require("raw-loader");
 
 module.exports = {
 	entry: "./app/index.js",
 	output: {
-		path: "dist",
-		publicPath: "/dist",
+		path: "../dist",
 		filename: "index.js"
 	},
 	externals: {
@@ -23,8 +18,5 @@ module.exports = {
 			test: /\.html$/,
 			loader: "html"
 		}]
-	},
-	devserver: {
-		inline: true
-	},
+	}
 }

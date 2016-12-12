@@ -4,7 +4,9 @@
   "description": "A test of using angular and es6 with webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-pkg": "cd source && webpack",
+    "build-test": "cd test-app && webpack",
+    "test-server": "cd test-app && webpack-dev-server"
   },
   "author": "Arjan Einbu",
   "license": "ISC",
