@@ -1,7 +1,7 @@
 # Template
 ## How to use this template project
 
-1. Copy the files and structure of this project.
+1. Copy the files and structure of this project. (If you use `git clone` you would probably want to remove the `.git` directory before initializing your new repo.)
 2. Create your NPM component in the `source` folder. (Modify entry and externals in `source/webpack.config.js` as neccessary.)
 3. Modify `package.json` to reflect the correct names.
 4. Try out your new component by modifying files in the `demo-app` folder. Run `npm run demo` to start the dev-server.
@@ -15,4 +15,6 @@
 ## Usage patterns for Angular 1.x
 
 - See `source/app/search/searchComponent.js` for how to include a template from an HTML-file.
-- See `source/app/index.js` for how to use `$templateCache` to include a template for use with `<ng-include src="'...'"></ng-include>` (As it is done in `source/app/index.html`.)
+- See `source/app/index.js` for how to use `$templateCache` to include a template for use with `<ng-include src="'...'"></ng-include>` (As it is used in `source/app/index.html`.)
+- See `source/app/search/index.js` for how to create a module, and which way the `require` statements point.
+- See `source/app/index.js`for how to include a module. Note both the `require` statement at top, as well as the dependency declaration in the `angular.module` statement.
