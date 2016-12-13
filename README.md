@@ -26,5 +26,6 @@
 - See `source/app/index.js` for how to use `$templateCache` to include a template for use with `<ng-include src="'...'"></ng-include>`.
   (As it is used in `source/app/index.html`.)
 - See `source/app/search/index.js` for how to create a module, and which way the `require` statements point.
+  Also note exporting the module name as a string.
 - See `source/app/index.js`for how to include a module.
   Note both the `require` statement at top, as well as the dependency declaration in the `angular.module` statement.
