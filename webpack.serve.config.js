@@ -8,6 +8,7 @@ module.exports = Object.assign({}, commonConfig, {
 	}
 	,
 	devServer: {
-		inline: true
+		inline: true,
+		contentBase: "wwwroot"
 	},
 });
