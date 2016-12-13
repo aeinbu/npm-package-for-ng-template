@@ -7,7 +7,11 @@
     "build": "cd source && webpack",
     "demo": "cd demo-app && webpack-dev-server"
   },
-  "author": "Arjan Einbu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeinbu/npm-package-for-ng-template.git"
+  },
+  "author": "Arjan Einbu <arjan@einbu.no> (http://blog.einbu.no)",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.20.0",
@@ -16,7 +20,8 @@
     "html-loader": "^0.4.4",
     "ng-annotate-loader": "^0.2.0",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "webpack-node-externals": "^1.5.4"
   },
   "dependencies": {
     "angular": "^1.6.0"
