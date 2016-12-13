@@ -1,6 +1,6 @@
 var angular = require("angular");
 
-module.exports = angular
+angular
 	.module("search", [])
 	.config(function () {
 		console.log("This is from module.config for search module...")
@@ -10,5 +10,5 @@ module.exports = angular
 require("./searchService");
 require("./searchComponent");
 
-//require("./search.css")
+module.exports = "search";
 

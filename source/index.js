@@ -1,7 +1,7 @@
 var angular = require("angular");
 var searchModule = require("./search");
 
-var module = angular.module("demo", ["search"]);
+var module = angular.module("demo", [searchModule]);
 
 module.config(function () {
 	console.log("This is from module.config for demo module...")
