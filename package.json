@@ -4,9 +4,9 @@
   "description": "Template for using WebPack to create NPM packages of Angular stuff",
   "main": "index.js",
   "scripts": {
-    "build": "cd source && webpack -p",
+    "build": "webpack -p --config webpack.build.config.js",
     "watch": "cd source && webpack --watch",
-    "demo": "cd demo-app && webpack-dev-server"
+    "demo": "webpack-dev-server --config webpack.serve.config.js --content-base wwwroot"
   },
   "repository": {
     "type": "git",

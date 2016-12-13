@@ -15,7 +15,8 @@ module.run(function ($templateCache) {
 		for (let val of num) {
 			console.log(val);
 		}
+		return "result from fn()12312";
 	};
 
-	console.log("test: ", fn(1, 2, 3, 4));
+	console.log("test: ", fn(1, 2, 3, 4, 5));
 });
