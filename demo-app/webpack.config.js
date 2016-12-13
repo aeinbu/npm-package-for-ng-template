@@ -1,11 +1,11 @@
 var path = require("path");
 
 module.exports = {
-	entry: "./wwwroot/test.js",
+	entry: "./wwwroot/demo.js",
 	output: {
 		path: "wwwroot/bundle",
 		publicPath: "/wwwroot/bundle",
-		filename: "test.js"
+		filename: "demo.js"
 	},
 	// module: {
 	// 	loaders: [{

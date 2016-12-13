@@ -1,12 +1,11 @@
 {
-  "name": "test-ng-webpack",
+  "name": "npm-package-for-ng-template",
   "version": "1.0.0",
-  "description": "A test of using angular and es6 with webpack",
+  "description": "Template for using WebPack to create NPM packages of Angular stuff",
   "main": "index.js",
   "scripts": {
-    "build-pkg": "cd source && webpack",
-    "build-test": "cd test-app && webpack",
-    "test-server": "cd test-app && webpack-dev-server"
+    "build": "cd source && webpack",
+    "demo": "cd demo-app && webpack-dev-server"
   },
   "author": "Arjan Einbu",
   "license": "ISC",
