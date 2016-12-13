@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd source && webpack -p",
-    "build-dev": "cd source && webpack --watch",
+    "watch": "cd source && webpack --watch",
     "demo": "cd demo-app && webpack-dev-server"
   },
   "repository": {
