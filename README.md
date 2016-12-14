@@ -20,6 +20,12 @@
 4. Try out your new component by modifying files in the `wwwroot` folder. Run `npm run demo` to start the dev-server.
 5. Build by running `npm run build`
 
+### ...or
+
+1. Create two folders: `source` and `wwwroot`.
+2. Copy six files: `webpack.*.config.js` (=3 files), and `.gitignore`, `.npmignore` and `package.json`.
+3. Modify `package.json`.
+
 ## Usage patterns for Angular 1.x
 
 - See `source/search/searchComponent.js` for how to include a template from an HTML-file.
