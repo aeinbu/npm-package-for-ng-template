@@ -1,8 +1,8 @@
-var commonConfig = require("./webpack.common.config");
+const commonConfig = require("./webpack.common.config");
 
 module.exports = Object.assign({}, commonConfig, {
 	output: {
-		publicPath: "/wwwroot/bundles",
+		publicPath: "/bundles",
 		filename: "bundle.js"
 	},
 	devServer: {

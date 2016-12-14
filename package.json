@@ -4,7 +4,8 @@
   "description": "Template for using WebPack to create NPM packages of Angular stuff",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p --config webpack.build.config.js",
+    "build": "webpack --config webpack.build.config.js",
+    "build-release": "webpack -p --config webpack.build.config.js",
     "watch": "webpack --config webpack.build.config.js --watch",
     "demo": "webpack-dev-server --config webpack.serve.config.js"
   },
@@ -18,8 +19,11 @@
     "babel-core": "^6.20.0",
     "babel-loader": "^6.2.9",
     "babel-preset-latest": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-loader": "^0.4.4",
     "ng-annotate-loader": "^0.2.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-node-externals": "^1.5.4"

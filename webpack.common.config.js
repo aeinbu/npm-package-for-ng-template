@@ -1,7 +1,11 @@
-var nodeExternals = require("webpack-node-externals");
+const nodeExternals = require("webpack-node-externals");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-	entry: "./source/index.js",
+	entry: [
+		"./source/index.js",
+		"./source/index.css"
+	],
 	module: {
 		loaders: [{
 			test: /\.js$/,
@@ -10,6 +14,12 @@ module.exports = {
 		}, {
 			test: /\.html$/,
 			loader: "html"
+		}, {
+			test: /\.css$/,
+			loader: ExtractTextPlugin.extract("style-loader", "css-loader")
 		}]
-	}
+	},
+	plugins:[
+		new ExtractTextPlugin("styles.css")
+	]
 }
