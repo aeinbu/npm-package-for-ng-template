@@ -3,7 +3,8 @@
 ## Features
 
 - Builds with webpack and babel
-- Externalizes all node_modules components. (Ie. they are not included in the npm package you're building...)
+- Externalizes all node_modules components for release builds. (Ie. they are not included in the npm package you're building...)
+- A webserver serving a test page to test your package.
 
 ## Goals
 - This template will act as a starting point for creating npm packages representing angular components etc.
@@ -25,6 +26,10 @@
 1. Create two folders: `source` and `wwwroot`.
 2. Copy six files: `webpack.*.config.js` (=3 files), and `.gitignore`, `.npmignore` and `package.json`.
 3. Modify `package.json`.
+
+## Adding loaders
+
+- New loaders should be added to `webpack.common.config.js`
 
 ## Usage patterns for Angular 1.x
 
