@@ -1,3 +1,4 @@
 dist
 node_modules
 wwwroot/bundles
+npm-debug.log

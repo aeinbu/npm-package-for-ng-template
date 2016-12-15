@@ -1,3 +1,4 @@
 node_modules
 wwwroot
 webpack*.config.js
+npm-debug.log
