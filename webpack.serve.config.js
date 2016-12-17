@@ -8,6 +8,7 @@ const combinedConfigs = merge({}, commonConfig, {
 		publicPath: "/bundles",
 		filename: "bundle.js"
 	},
+	devtool: "#eval",
 	plugins: [
 		new webpack.HotModuleReplacementPlugin()
 	],

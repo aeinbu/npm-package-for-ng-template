@@ -7,6 +7,7 @@ const combinedConfig = merge({}, commonConfig, {
 		path: "./dist",
 		filename: "index.js"
 	},
+	devtool: "#source-map",
 	externals: [
 		nodeExternals()
 	],
