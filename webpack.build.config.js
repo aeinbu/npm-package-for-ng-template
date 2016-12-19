@@ -5,6 +5,7 @@ const merge = (...objs) => require("deepmerge").all(objs, {arrayMerge: (arr1, ar
 const combinedConfig = merge({}, commonConfig, {
 	output: {
 		path: "./dist",
+		libraryTarget: "commonjs2",
 		filename: "index.js"
 	},
 	devtool: "#source-map",

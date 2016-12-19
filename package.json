@@ -4,8 +4,9 @@
   "description": "Template for using WebPack to create NPM packages of Angular stuff",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.build.config.js",
-    "build-release": "webpack -p --config webpack.build.config.js",
+    "clean":"rimraf dist/*",
+    "build": "npm run clean && webpack --config webpack.build.config.js",
+    "build-release": "npm run clean && webpack -p --config webpack.build.config.js",
     "watch": "webpack --config webpack.build.config.js --watch",
     "demo": "webpack-dev-server --config webpack.serve.config.js"
   },
@@ -24,6 +25,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "html-loader": "^0.4.4",
     "ng-annotate-loader": "^0.2.0",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
