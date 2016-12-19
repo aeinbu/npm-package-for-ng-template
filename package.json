@@ -8,7 +8,7 @@
     "build": "npm run clean && webpack --config webpack.build.config.js",
     "build-release": "npm run clean && webpack -p --config webpack.build.config.js",
     "watch": "webpack --config webpack.build.config.js --watch",
-    "demo": "webpack-dev-server --config webpack.serve.config.js"
+    "start": "webpack-dev-server --config webpack.serve.config.js"
   },
   "repository": {
     "type": "git",
