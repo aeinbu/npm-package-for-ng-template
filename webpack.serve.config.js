@@ -6,7 +6,7 @@ const merge = (...objs) => require("deepmerge").all(objs, {arrayMerge: (arr1, ar
 const combinedConfigs = merge({}, commonConfig, {
 	output: {
 		publicPath: "/bundles",
-		filename: "bundle.js"
+		filename: "index.js"
 	},
 	devtool: "#eval",
 	plugins: [
